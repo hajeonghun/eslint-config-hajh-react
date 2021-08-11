@@ -1,4 +1,4 @@
-{
+module.exports = {
   "singleQuote": true,
   "jsxSingleQuote": false,
   "semi": true,
@@ -8,4 +8,4 @@
   "printWidth": 80,
   "arrowParens": "avoid",
   "bracketSpacing": false
-}
+};

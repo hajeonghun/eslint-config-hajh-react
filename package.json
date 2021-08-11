@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hajh-react",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "HaJeongHun JavaScript + React Coding Conventions rules for eslint",
   "main": "index.js",
   "repository": {

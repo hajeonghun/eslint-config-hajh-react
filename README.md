@@ -56,6 +56,36 @@
 }
 ```
 
+### Prettier 추가 
+```
+// .prettierrc 파일
+{
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "arrowParens": "avoid",
+  "bracketSpacing": false
+}
+```
+
+### Auto Formatting 관련 패키지 설치 및 적용
+```
+npm install --save-dev eslint-plugin-prettier eslint-config-prettier
+```
+```
+// .eslintrc 파일
+// js만 적용 시
+extends: ['hajh-react', 'plugin:prettier/recommended'],
+
+// js + react 적용 시
+extends: ['hajh-react', 'hajh-react/hooks', 'plugin:prettier/recommended'],
+```
+
+
 ## Hajh JavaScript Style Guilde
 상세한 내용은 다음의 JavaScript 스타일 가이드를 참조하세요  
 ### [Hajh JavaScript Style Guilde](STYLE_GUIDE.md)

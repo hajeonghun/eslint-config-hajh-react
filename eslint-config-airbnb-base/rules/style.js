@@ -275,7 +275,12 @@ module.exports = {
     "no-trailing-spaces": "error",
 
     // disallow dangling underscores in identifiers
-    "no-underscore-dangle": ["error", { allowAfterThis: false }],
+    "no-underscore-dangle": ["error", {
+      allow: [],
+      allowAfterThis: false,
+      allowAfterSuper: false,
+      enforceInMethodNames: true,
+    }],
 
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`

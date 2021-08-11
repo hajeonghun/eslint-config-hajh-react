@@ -1,5 +1,5 @@
 # Hajh Javascript Coding Conventions
-- eslint-config-hajh-react 는 자바스크립트 코딩컨벤션을 지원하는 [eslint](http://eslint.org/) 룰 셋입니다.
+- eslint-config-hajh-react 는 자바스크립트 및 리액트 코딩컨벤션을 지원하는 [eslint](http://eslint.org/) 룰 셋입니다.
 - eslint-config-hajh-react 는 [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) 룰셋 기준으로 작성되었습니다.
 
 > ### eslint-config-hajh-react는 2개의 룰 셋을 제공합니다.
@@ -8,7 +8,7 @@
 
 ## Install
 ```
-#npm install eslint-config-hajh-react
+#npx install-peerdeps --dev eslint-config-hajh-react
 ```
 
 ## Usage
@@ -17,6 +17,17 @@
 // .eslintrc 파일
 {
   "extends": "hajh-react",
+  "rules": {
+    // 프로젝트별 적용할 Rules
+  }
+}
+```
+
+### ES6+ 와 React hooks(requires v16.8+)를 사용하는 경우
+```
+// .eslintrc 파일
+{
+  "extends": ["hajh-react", "hajh-react/hooks"],
   "rules": {
     // 프로젝트별 적용할 Rules
   }
@@ -34,10 +45,24 @@
 }
 ```
 
+### ES5 와 React hooks(requires v16.8+)를 사용하는 경우
+```
+// .eslintrc 파일
+{
+  "extends": ["hajh-react/es5", "hajh-react/hooks"],
+  "rules": {
+    // 프로젝트별 적용할 Rules
+  }
+}
+```
+
 ## Hajh JavaScript Style Guilde
 상세한 내용은 다음의 JavaScript 스타일 가이드를 참조하세요  
-
 ### [Hajh JavaScript Style Guilde](STYLE_GUIDE.md)
+
+## Hajh React Hooks Style Guide
+상세한 내용은 다음의 JavaScript 스타일 가이드를 참조하세요
+### [Hajh React Hooks Style Guilde](REACT_STYLE_GUIDE.md)
 
 
 ## License
